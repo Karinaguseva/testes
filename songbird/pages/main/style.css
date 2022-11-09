@@ -1,0 +1,27 @@
+
+.main__container{
+  height: 80vh;
+  background-color: rgb(10, 47, 37);
+  position: relative;
+}
+
+.main__greet{
+  width: 80%;
+  margin: 0 0 0 auto;
+}
+
+.greet__text{
+  font-size: 80px;
+  padding: 40px 0;
+  text-align: end;
+}
+
+.main__img{
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.testdiv{
+  color: black;
+}

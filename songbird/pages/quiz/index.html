@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/styles/normalize.css">
+  <link rel="stylesheet" href="../../assets/styles/common_styles.css">
+  <link rel="stylesheet" href="../../assets/styles/header-footer_style.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo logo">
+                <p class="logo__text text">
+                    <span class="text__first-part">Song</span><span class="text__second-part">bird</span>
+                </p>
+                <img class="logo__img" src="../../assets/images/logo-bird.png" alt="Parrot">
+            </div>
+            <nav class="header__nav nav">
+                <ul class="nav__list list">
+                    <li class="list__item item">
+                        <a class="item__link" href="../main/index.html">Главная</a>
+                    </li>
+                    <li class="list__item item">
+                        <a class="item__link" href="../quiz/index.html">Викторина</a>
+                    </li>
+                    <li class="list__item item">
+                        <a class="item__link" href="../results/index.html">Результаты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!-- END header -->
+    <main class="main">
+        <div class="main__container container">
+            <section class="main__categories categories">
+                <div class="categories__wrap">
+                    <div class="categories__item categories__item_active">Разминка</div>
+                    <div class="categories__item">Воробьиные</div>
+                    <div class="categories__item">Лесные птицы</div>
+                    <div class="categories__item">Певчие птицы</div>
+                    <div class="categories__item">Хищные птицы</div>
+                    <div class="categories__item">Морские птицы</div>
+                </div>
+            </section>
+            <section class="main__anonymous anonymous">
+                <div class="anonymous__wrap">
+                    <img src="../../assets/images/anonymous_bird.jpg" alt="anonymous bird" class="anonymous__img">
+                    <div class="anonymous__info">
+                        <div class="anonymous__name">*****</div>
+                        <div class="anonymous__player player">
+                            <div class="player__controls">
+                                <div class="player__icon"></div>
+                                <div class="player__progress-wrap">
+                                    <div class="player__progress"></div>
+                                    <div class="player__time player__time_current"></div>
+                                    <div class="player__time player__time_length"></div>
+                                </div>
+                            </div>
+                            <div class="player__volume volume">
+                                <div class="volume__btn"></div>
+                                <div class="volume__slider">
+                                    <input class="volume__progress" type="range" min="0" max="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__answers answers">
+                <div class="anwers__score-wrap">
+                    <span class="anwers__score">Score: 30</span> 
+                </div>
+                <ul class="answers__options options">
+                    <li class="options__item">
+                        <span class="item__btn"></span>
+                        текст
+                    </li>
+                    <li class="options__item">
+                        <span class="item__btn item__btn_active"></span>
+                        текст
+                    </li>
+                    <li class="options__item">
+                        <span class="item__btn"></span>
+                        текст
+                    </li>
+                    <li class="options__item">
+                        <span class="item__btn"></span>
+                        текст
+                    </li>
+                    <li class="options__item">
+                        <span class="item__btn"></span>
+                        текст
+                    </li>
+                    <li class="options__item">
+                        <span class="item__btn"></span>
+                        текст
+                    </li>
+                </ul>
+                <div class="answers__wrap">
+                    <!-- <p class="answers__task">
+                        Послушайте плеер.
+                        <br>Выберите птицу из списка.
+                    </p> -->
+                    <div class="answers__info info">
+                        <img src="../../assets/images/anonymous_bird.jpg" alt="anonymous bird" class="info__img">
+                        <div class="info__description">
+                            <div class="answers__name">Коршун</div>
+                            <div class="answers__name_latin">Cuculus canorus</div>
+                            <div class="answers__player player">
+                                <div class="player__controls">
+                                    <div class="player__icon"></div>
+                                    <div class="player__progress-wrap">
+                                        <div class="player__progress"></div>
+                                        <div class="player__time player__time_current"></div>
+                                        <div class="player__time player__time_length"></div>
+                                    </div>
+                                </div>
+                                <div class="player__volume volume">
+                                    <div class="volume__btn"></div>
+                                    <div class="volume__slider">
+                                        <input class="volume__progress" type="range" min="0" max="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="answers__text"><p>В щебетании синиц различают более 40 различных звуковых сочетаний. Поют они практически круглый год, немного затихая только зимой. Синицы настоящие санитары леса. Одна пара синиц в период гнездования оберегает от вредителей десятки деревьев.</p></div>
+                </div>
+                <button class="answers__btn">Следующий уровень</button>
+            </section>
+        </div>
+    </main>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__info info">
+                <a class="info__github" href="https://github.com/Karinaguseva" target="_blank">Karinaguseva</a>
+                <p class="info__year">2022</p>
+                <a class="info__link" href="https://rs.school/js/" target="_blank">
+                    <img class="info__logo" src="../../assets/images/rs_school_js.svg" alt="Rss">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
